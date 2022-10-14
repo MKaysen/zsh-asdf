@@ -32,7 +32,7 @@ function asdf-setup {
   source ${Plugins[ZSH_ASDF_DIR]}/asdf.sh
   
   if [[ ${zsh_loaded_plugins[-1]} != */completions && -z ${fpath[(r)${0:h}/functions]} ]] {
-    fpath+=( "${Plugins[ZSH_ASDF_DIR]}/functions" )
+    fpath+=( "${Plugins[ZSH_ASDF_DIR]}/completions" )
   }
 }
 
